@@ -1,0 +1,278 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+#top{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    height: 18vh;
+    justify-content: space-between;
+    background-color: #7d4f50;
+    color: #f9eae1;
+    padding: 20px 60px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: "Elsie", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+
+  
+.icon{
+    width: 50px;
+    height: 50px;
+    text-align: right;
+}
+
+.cart {
+    position: absolute;
+    width: 350px;
+    left: calc(100% - 380px);
+    font-size: 30px;
+    padding: 20px 20px;
+    border-radius: 10px;
+
+}
+
+img.cart_icon {
+    width: 15%;
+}
+
+.cart_icon {
+    text-align: right;
+}
+
+h2.shopcart {
+    font-size: x-large;
+    padding: 15px 10px;
+    color: #7d4f50;
+}
+
+.cart-wrapper {
+    overflow-y: auto;
+    max-height: 350px;
+}
+
+.subtotal {
+    text-align: right;
+    padding: 5%;
+    color: #7d4f50;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.checkout { 
+    width: 95%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #cc8b86;
+    font-size: large;
+    color: #f9eae1;
+    margin: 10px auto;
+    padding: 10px 15px;
+}
+
+.clearcart { 
+    width: 95%;
+    text-align: center;
+    cursor: pointer;
+    background-color:#7d4f50;
+    font-size: large;
+    color: #f9eae1;
+    margin: 10px auto;
+    padding: 10px 15px;
+}
+
+.cartAmount {
+    position: absolute;
+    top: -5px;
+    right: 13px;
+    font-size: 21px;
+    color: #f9eae1;
+    background-color: #cc8b86;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 90px repeat(1, 1fr);
+    border-bottom: solid 1px #f9eae1;
+    padding-top: 15px;
+}
+
+.cart-item img {
+    width: 100%;
+}
+
+.cart-item .cart_details {
+    color: #7d4f50;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;    
+}
+
+.cart_details>p {
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.price {
+    font-style: italic;
+    display: block;
+    text-align: right;
+    margin-top: 20%;
+    margin-bottom: 10px;
+    padding-right: 15px;
+}
+
+.cart-item h3 {
+    text-align: left;
+    font-size: 20px;
+}
+
+img.icon_cancel {
+    width: 5%;
+    float: right;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.whole-cart-window{
+    font-size: 30px;
+    padding: 10px;    border-top:none;
+    position: fixed;
+    top:86px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-right:2%;
+}
+
+.hide {
+    display: none;
+}
+
+#plus {
+    width: 20px;
+    height: 21px;
+}
+
+#minus {
+    width: 17px;
+    height: 20px;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.top {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 50px;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .main{
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    #top {
+        margin-bottom: 50px;
+        width: 700px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main{
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    #top {
+        margin-bottom: 20px;
+
+    }
+}
+
+.price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+   display: flex;
+   flex-direction: row;
+   gap: 8px;
+   font-size: 20px;
+}
+
+#plus:active, #minus:active {
+    background-color: #efece9;
+    border-radius: 50%;
+}
+
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #7d4f50;
+    color: #f9eae1;
+    margin-top: 50px;
+  }
+
+a:link, a:visited {
+    color: #f9eae1;
+}
+
+.removeBtn {
+    background-color: #7d4f50;
+    color: #f9eae1;
+    border: 2px solid ;
+    border-radius: 50%;
+    margin-left: 30px;
+    font-size: 10px;
+    padding: 0px 5px 0px 5px;
+  }
+
+h6 {
+    color: #7d4f50;
+}
